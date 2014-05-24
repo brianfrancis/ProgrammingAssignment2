@@ -51,7 +51,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ##       inv1 <- cacheSolve(x) ## returns inverse of matrix m from the cache
 
 cacheSolve <- function(x, ...) {
-        ## return the inverse of the matrix is previously cached, otherwise null
+        ## return the inverse of the matrix if previously cached, otherwise null
         i <- x$getinverse()
         ## check if i is null and return i if not and exit the function
         if(!is.null(i)) {
